@@ -16,5 +16,12 @@ def generate_random_quote():
   quote = quoteGenerate()
   return jsonify(quote)
 
+@app.route('/api/quotes')
+def generate_quotes():
+  with open('quotes.json','r') as f:
+    quotes = json.load(f)
+    # print(quotes)
+  return jsonify({'quotes':quotes})
+
 if __name__ == '__main__':
   app.run()
