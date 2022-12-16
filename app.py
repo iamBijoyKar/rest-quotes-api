@@ -1,4 +1,4 @@
-from flask import Flask,jsonify
+from flask import Flask,jsonify,render_template,url_for
 import json
 import random
 
@@ -10,6 +10,10 @@ def quoteGenerate():
     return quote
 
 app = Flask(__name__)
+
+@app.route('/api')
+def home():
+  return render_template('index.html')
 
 @app.route('/api/quotes/random')
 def generate_random_quote():
