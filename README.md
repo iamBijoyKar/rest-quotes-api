@@ -16,7 +16,7 @@
   "quoteText": "Great talent finds happiness in execution."
 }
 ```
-<code><a href="https://rest-quotes-api.onrender.com/api/quotes">**'/api/quotes'</a></code>response with JSON of 300+ quotes like below 👇**
+<code><a href="https://rest-quotes-api.onrender.com/api/quotes">**'/api/quotes'</a></code> response with JSON of 300+ quotes like below 👇**
 ```
 {
 
