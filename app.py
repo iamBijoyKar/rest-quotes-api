@@ -11,6 +11,10 @@ def quoteGenerate():
 
 app = Flask(__name__)
 
+@app.route('/')
+def redirect():
+  return render_template('redirect.html')
+
 @app.route('/api')
 def home():
   return render_template('index.html')
